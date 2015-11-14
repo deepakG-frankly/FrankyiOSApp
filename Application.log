@@ -1,0 +1,73 @@
+2015-11-14 20:55:48 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 20:57:19 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-14 20:57:19 INFO  com.frankly.base.Keywords     - 
+2015-11-14 20:57:19 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 20:57:19 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 20:59:52 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 20:59:53 INFO  com.frankly.base.Keywords     - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'Jays-MacBook-Pro-2.local', ip: '192.168.0.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
+Driver info: driver.version: IOSDriver
+2015-11-14 20:59:53 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 20:59:53 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 20:59:53 INFO  com.frankly.base.Keywords     - 
+2015-11-14 21:00:07 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:00:17 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-14 21:00:17 INFO  com.frankly.base.Keywords     - 
+2015-11-14 21:00:17 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:00:17 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 21:10:25 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:10:37 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-14 21:10:37 INFO  com.frankly.base.Keywords     - 
+2015-11-14 21:10:37 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:10:37 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 21:15:17 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:15:42 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-14 21:15:52 INFO  com.frankly.base.Keywords     - 
+2015-11-14 21:15:52 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:15:52 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 21:17:46 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:18:30 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:18:31 INFO  com.frankly.base.Keywords     - A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 178 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'Jays-MacBook-Pro-2.local', ip: '192.168.0.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
+Driver info: io.appium.java_client.ios.IOSDriver
+2015-11-14 21:18:31 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:18:31 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 21:18:31 INFO  com.frankly.base.Keywords     - 
+2015-11-14 21:18:46 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:18:46 INFO  com.frankly.base.Keywords     - A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 200 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'Jays-MacBook-Pro-2.local', ip: '192.168.0.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
+Driver info: io.appium.java_client.ios.IOSDriver
+2015-11-14 21:18:46 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:18:46 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 21:18:46 INFO  com.frankly.base.Keywords     - 
+2015-11-14 21:19:16 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:19:26 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-14 21:19:26 INFO  com.frankly.base.Keywords     - 
+2015-11-14 21:19:26 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:19:26 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 21:19:48 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:20:16 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-14 21:20:27 INFO  com.frankly.base.Keywords     - 
+2015-11-14 21:20:27 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:20:27 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 21:32:25 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:32:44 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-14 21:32:44 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:32:50 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 21:34:24 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:35:13 INFO  com.frankly.base.Keywords     - Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'Jays-MacBook-Pro-2.local', ip: '192.168.0.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
+Driver info: driver.version: IOSDriver
+2015-11-14 21:35:13 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:35:13 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-14 21:35:13 INFO  com.frankly.base.Keywords     - 
+2015-11-14 21:35:24 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-14 21:35:35 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-14 21:35:35 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-14 21:35:40 INFO  com.frankly.base.Keywords     - quuiting the drive
