@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="franklyMe iOS App Test Automation"> 
+ 
+ <test name="FranklyIOSApp">
+    <classes>
+     	 <class name="com.frankly.test.verifyloginpage"/> 
+      </classes>
+  </test>
+</suite>

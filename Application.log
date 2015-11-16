@@ -71,3 +71,23 @@ Driver info: driver.version: IOSDriver
 2015-11-14 21:35:35 INFO  com.frankly.base.Keywords     - initializing the property file
 2015-11-14 21:35:35 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
 2015-11-14 21:35:40 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-16 11:23:44 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-16 11:23:57 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-16 11:23:57 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-16 11:25:09 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-16 11:25:10 INFO  com.frankly.base.Keywords     - A new session could not be created. (Original error: Requested a new session but one was in progress) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 144 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf', time: '2014-10-23 20:03:00'
+System info: host: 'Jays-MacBook-Pro-2.local', ip: '192.168.1.16', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.10.3', java.version: '1.8.0_60'
+Driver info: io.appium.java_client.ios.IOSDriver
+2015-11-16 11:25:10 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-16 11:25:10 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-16 11:25:10 INFO  com.frankly.base.Keywords     - 
+2015-11-16 11:25:40 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-16 11:25:51 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-16 11:25:51 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-16 11:25:57 INFO  com.frankly.base.Keywords     - quuiting the drive
+2015-11-16 11:27:46 INFO  com.frankly.base.Keywords     - Installing the app in device
+2015-11-16 11:28:17 INFO  com.frankly.base.Keywords     - initializing the property file
+2015-11-16 11:28:17 INFO  com.frankly.base.Keywords     - Clicking on a element by its name
+2015-11-16 11:28:22 INFO  com.frankly.base.Keywords     - quuiting the drive
