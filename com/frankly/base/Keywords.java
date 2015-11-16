@@ -7,7 +7,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.json.JSONException;
 import org.openqa.selenium.By;
@@ -79,5 +78,16 @@ public class Keywords {
 			e.getMessage();
 			}
 		}
-	
+		/**
+		 * @description- Method for sending the string into textfield
+		 */
+		public void writeTextByXpath(String elementXpath){
+			APP_LOGS.info("Clicking on a element by its xpath");
+			try{
+				driver.findElement(By.xpath(OR.getProperty(elementXpath))).click();
+				driver.findElement(By.xpath(OR.getProperty(elementXpath))).sendKeys("deepak");
+			}catch(Exception e){
+			e.getMessage();
+			}
+		}
 }
