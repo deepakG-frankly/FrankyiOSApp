@@ -28,14 +28,35 @@ public class loginpage extends Keywords {
 			APP_LOGS.info(e.getMessage());
 		}
 	}
-	public void loginwithInvalid(String GetStartedBtnName,
+	public void errwithinvalidcredential(String LoginBtnName,
+			String UserNameTextFieldXpath,
+			String InValidUserName,
+			String NextBtn_Name,
+			String LoginPasswordTextFieldXpath,
+			String InvalidPassword,
+			String ErrorMessageforInvalidCre,
+			String invalidCreErrorMessage,
+			String BackBtnXpath){
+		try{
+			clickByName(LoginBtnName);
+			clickByXpath(UserNameTextFieldXpath);
+			writeTextByXpath(UserNameTextFieldXpath,InValidUserName);
+			clickByName(NextBtn_Name);
+			writeTextByXpath(LoginPasswordTextFieldXpath,InvalidPassword);
+			clickByName(NextBtn_Name);
+			Assert.assertTrue(validateExpectedText(ErrorMessageforInvalidCre,invalidCreErrorMessage));
+			clickByXpath(BackBtnXpath);
+		}catch(Exception e){
+			APP_LOGS.info(e.getMessage());
+		}
+	}
+	public void loginwithValid(
 			String LoginBtnName,
 			String UserNameTextFieldXpath,
 			String UserName,
 			String NextBtn_Name,
 			String LoginPasswordTextFieldXpath,
 			String Password) throws InterruptedException{
-		clickByName(GetStartedBtnName);
 		clickByName(LoginBtnName);
 		clickByXpath(UserNameTextFieldXpath);
 		writeTextByXpath(UserNameTextFieldXpath,UserName);

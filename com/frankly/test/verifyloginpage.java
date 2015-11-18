@@ -38,10 +38,26 @@ public class verifyloginpage extends Keywords {
 				APP_LOGS.info(e.getMessage());
 			}
 		}
-	@Test(enabled = true, priority = 3)
+		@Test(enabled = true, priority = 3)
+		public void verifyErrorMessAfterInvalidCre(){
+			try{
+				LoginPage.errwithinvalidcredential("LoginBtnName",
+				"UserNameTextFieldXpath",
+				"InValidUserName",
+				"NextBtn_Name",
+				"LoginPasswordTextFieldXpath",
+				"InvalidPassword",
+				"ErrorMessageforInvalidCre",
+				"invalidCreErrorMessage",
+				"BackBtnXpath");
+			}catch(Exception e){
+				APP_LOGS.info(e.getMessage());
+			}
+		}
+	@Test(enabled = true, priority = 4)
 	public void verifyloginfun(){
 		try{
-			LoginPage.loginwithInvalid("GetStartedBtnName",
+			LoginPage.loginwithValid(
 					"LoginBtnName",
 					"UserNameTextFieldXpath",
 					"UserName",
