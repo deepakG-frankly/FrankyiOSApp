@@ -17,10 +17,37 @@ public class verifyloginpage extends Keywords {
 			APP_LOGS.info(e.getMessage());
 		}
 	}
-	@Test
+	@Test(enabled = true, priority = 1)
+	public void acceptAlert(){
+		try{
+			LoginPage.acceptalert();
+		}catch(Exception e){
+			APP_LOGS.info(e.getMessage());
+		}
+	}
+		@Test(enabled = true, priority = 2)
+		public void verifyErrorMessage(){
+			try{
+				LoginPage.verifyerrormessage("GetStartedBtnName",
+						"UserNameTextFieldXpath",
+						"InvalidUserName",
+						"SignUp_ErrorMessageName",
+						"SignUpErrorMessgae"
+						);
+			}catch(Exception e){
+				APP_LOGS.info(e.getMessage());
+			}
+		}
+	@Test(enabled = true, priority = 3)
 	public void verifyloginfun(){
 		try{
-			LoginPage.loginwithInvalid("GetStartedBtnName");
+			LoginPage.loginwithInvalid("GetStartedBtnName",
+					"LoginBtnName",
+					"UserNameTextFieldXpath",
+					"UserName",
+					"NextBtn_Name",
+					"LoginPasswordTextFieldXpath",
+					"Password");
 		}catch(Exception e){
 			APP_LOGS.info(e.getMessage());
 		}

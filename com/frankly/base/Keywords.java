@@ -9,6 +9,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.json.JSONException;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.ios.IOSDriver;
@@ -50,8 +51,8 @@ public class Keywords {
 				CONFIG.load(fs);
 				 fs=new FileInputStream(System.getProperty("user.dir")+"/src/com/frankly/config/OR.properties");
 				OR.load(fs);
-	  }catch(Exception e){
-		  APP_LOGS.info(e.getMessage());
+		}catch(Exception e){
+				APP_LOGS.info(e.getMessage());
 	  }
 	}
 
@@ -75,19 +76,73 @@ public class Keywords {
 				driver.findElement(By.name(OR.getProperty(elementName))).click();
 				Thread.sleep(5000L);
 			}catch(Exception e){
-			e.getMessage();
+				APP_LOGS.info(e.getMessage());
 			}
 		}
 		/**
 		 * @description- Method for sending the string into textfield
 		 */
-		public void writeTextByXpath(String elementXpath){
-			APP_LOGS.info("Clicking on a element by its xpath");
+		public void writeTextByXpath(String elementXpath,String userdata){
+			APP_LOGS.info("Clicking on a element by its xpath enter data");
 			try{
 				driver.findElement(By.xpath(OR.getProperty(elementXpath))).click();
-				driver.findElement(By.xpath(OR.getProperty(elementXpath))).sendKeys("deepak");
+				driver.findElement(By.xpath(OR.getProperty(elementXpath))).sendKeys(OR.getProperty((userdata)));
 			}catch(Exception e){
-			e.getMessage();
+				APP_LOGS.info(e.getMessage());
 			}
-		}
+			}
+			/**
+			 * @description- Method for accepting the alert
+			 */
+			public void acceptalert(){
+				APP_LOGS.info("Clicking on a element by its xpath");
+				try{
+					driver.findElement(By.name("OK")).click();
+					Alert alert = driver.switchTo().alert();
+					alert.accept();
+					alert.dismiss();
+				}catch(Exception e){
+					APP_LOGS.info(e.getMessage());
+				}
+			}
+				/**
+				 * @description- Method for click on button by xpath
+				 */
+				public void clickByXpath(String elementxpath){
+					APP_LOGS.info("Clicking on a element by its xpath");
+					try{
+						driver.findElement(By.xpath(OR.getProperty(elementxpath))).click();
+					}catch(Exception e){
+						APP_LOGS.info(e.getMessage());
+					}
+				}
+				/**
+				 * @description- Method for clicking on a textfield by linkText
+				*/
+				public void clickBylinkText(String elementlinkText){
+					APP_LOGS.info("Clicking on a element by its linkText");
+					try{
+						driver.findElement(By.linkText(OR.getProperty(elementlinkText))).click();
+					}catch(Exception e){
+						APP_LOGS.info(e.getMessage());
+					}
+				}
+					/**
+					 * @description- Method for verify the page heading by  its name
+					*/
+				public boolean validateExpectedText(String elementName, String expected_data){
+					APP_LOGS.info("Clicking on a element by its linkText");
+					try{
+						String Actual_Value = driver.findElement(By.name(OR.getProperty(elementName))).getText();
+						if(Actual_Value.contains(OR.getProperty(expected_data))){
+							return true;
+						}
+						else{
+							return false;
+						}
+					}catch(Exception e){
+						APP_LOGS.info(e.getMessage());
+						}
+						return true;
+					}
 }
