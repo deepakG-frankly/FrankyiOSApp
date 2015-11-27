@@ -21,9 +21,12 @@ public class loginpage extends Keywords {
 			String SignUpErrorMessgae){
 		try{
 			clickByName(GetStartedBtnName);
-			writeTextByXpath(UserNameTextFieldXpath,InvalidUserName);
-			validateExpectedText(SignUp_ErrorMessageName,SignUpErrorMessgae);
-		Assert.assertTrue(validateExpectedText(SignUp_ErrorMessageName,SignUpErrorMessgae));
+			writeTextByXpath(UserNameTextFieldXpath,
+					InvalidUserName);
+			validateExpectedText(SignUp_ErrorMessageName,
+					SignUpErrorMessgae);
+		Assert.assertTrue(validateExpectedText(SignUp_ErrorMessageName,
+				SignUpErrorMessgae));
 		}catch(Exception e){
 			APP_LOGS.info(e.getMessage());
 		}
@@ -40,11 +43,14 @@ public class loginpage extends Keywords {
 		try{
 			clickByName(LoginBtnName);
 			clickByXpath(UserNameTextFieldXpath);
-			writeTextByXpath(UserNameTextFieldXpath,InValidUserName);
+			writeTextByXpath(UserNameTextFieldXpath,
+					InValidUserName);
 			clickByName(NextBtn_Name);
-			writeTextByXpath(LoginPasswordTextFieldXpath,InvalidPassword);
+			writeTextByXpath(LoginPasswordTextFieldXpath,
+					InvalidPassword);
 			clickByName(NextBtn_Name);
-			Assert.assertTrue(validateExpectedText(ErrorMessageforInvalidCre,invalidCreErrorMessage));
+			Assert.assertTrue(validateExpectedText(ErrorMessageforInvalidCre,
+					invalidCreErrorMessage));
 			clickByXpath(BackBtnXpath);
 		}catch(Exception e){
 			APP_LOGS.info(e.getMessage());

@@ -16,7 +16,7 @@ import io.appium.java_client.ios.IOSDriver;
 
 public class Keywords {
 	private IOSDriver driver;
-	public static String deviceName = "iPhone 6";
+	public static String deviceName = "iPhone 5s";
 	public static Properties CONFIG=null;
 	public static Properties OR=null;
 	public static Logger APP_LOGS = Logger.getLogger(Keywords.class);;
@@ -26,13 +26,23 @@ public class Keywords {
 	public void InstallApp(){
 		APP_LOGS.info("Installing the app in device");
 		try {
+			// file path for installing the app in simulator
 			File file =new File(System.getProperty("user.dir")+"/Frankly.app");
+			// file path for installing the app in real device
+			//File deviceFile=new File(System.getProperty("user.dir")+"/Frankly.ipa");
 			DesiredCapabilities capabilities= new DesiredCapabilities();
+			System.out.println("hello");
 			capabilities.setCapability("appium.version", "1.4.13");
 			capabilities.setCapability("platformName", "iOS");
-			capabilities.setCapability("platformVersion", "8.1");
+			capabilities.setCapability("platformVersion", "8.4");
+			// desire capabilities for simulator
 			capabilities.setCapability("deviceName", deviceName);
+			// desire capabilities for real device
+			//capabilities.setCapability("deviceName", "iPhone(2)(2bdd1872de84cba5440ecd96da9ca93c6f91fe5d)");
+			// load the file path for simulator
 			capabilities.setCapability("app", file.getAbsolutePath());
+			// load the file path for real device
+			//capabilities.setCapability("app", deviceFile.getAbsolutePath());
 			driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		} catch (MalformedURLException e) {

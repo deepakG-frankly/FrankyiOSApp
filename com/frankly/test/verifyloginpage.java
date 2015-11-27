@@ -17,15 +17,7 @@ public class verifyloginpage extends Keywords {
 			APP_LOGS.info(e.getMessage());
 		}
 	}
-	@Test(enabled = true, priority = 1)
-	public void acceptAlert(){
-		try{
-			LoginPage.acceptalert();
-		}catch(Exception e){
-			APP_LOGS.info(e.getMessage());
-		}
-	}
-		@Test(enabled = true, priority = 2)
+		@Test(enabled = true, priority = 1)
 		public void verifyErrorMessage(){
 			try{
 				LoginPage.verifyerrormessage("GetStartedBtnName",
@@ -38,7 +30,7 @@ public class verifyloginpage extends Keywords {
 				APP_LOGS.info(e.getMessage());
 			}
 		}
-		@Test(enabled = true, priority = 3)
+		@Test(enabled = true, priority = 2)
 		public void verifyErrorMessAfterInvalidCre(){
 			try{
 				LoginPage.errwithinvalidcredential("LoginBtnName",
@@ -54,7 +46,7 @@ public class verifyloginpage extends Keywords {
 				APP_LOGS.info(e.getMessage());
 			}
 		}
-	@Test(enabled = true, priority = 4)
+	@Test(enabled = true, priority = 3)
 	public void verifyloginfun(){
 		try{
 			LoginPage.loginwithValid(
