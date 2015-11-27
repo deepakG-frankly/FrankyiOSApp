@@ -31,7 +31,6 @@ public class Keywords {
 			// file path for installing the app in real device
 			//File deviceFile=new File(System.getProperty("user.dir")+"/Frankly.ipa");
 			DesiredCapabilities capabilities= new DesiredCapabilities();
-			System.out.println("hello");
 			capabilities.setCapability("appium.version", "1.4.13");
 			capabilities.setCapability("platformName", "iOS");
 			capabilities.setCapability("platformVersion", "8.4");
@@ -83,6 +82,7 @@ public class Keywords {
 		public void clickByName(String elementName){
 			APP_LOGS.info("Clicking on a element by its name");
 			try{
+				Thread.sleep(5000L);
 				driver.findElement(By.name(OR.getProperty(elementName))).click();
 				Thread.sleep(5000L);
 			}catch(Exception e){
