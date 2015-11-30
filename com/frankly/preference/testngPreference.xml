@@ -4,8 +4,9 @@
  
  <test name="FranklyIOSApp">
     <classes>
-     	<!--<class name="com.frankly.test.verifyloginpage"/> -->
-     	  <class name="com.frankly.test.VerifyDubAdialogue"/> 
+     	<!--<class name="com.frankly.test.verifyloginpage"/> 
+     	  <class name="com.frankly.test.VerifyRecordAVlog"/> -->
+     	  <class name="com.frankly.test.VerifySmashAscene"/> 
       </classes>
   </test>
 </suite>

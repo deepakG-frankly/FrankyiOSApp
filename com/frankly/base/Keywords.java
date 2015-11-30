@@ -27,9 +27,9 @@ public class Keywords {
 		APP_LOGS.info("Installing the app in device");
 		try {
 			// file path for installing the app in simulator
-			File file =new File(System.getProperty("user.dir")+"/Frankly.app");
+			//File file =new File(System.getProperty("user.dir")+"/Frankly.app");
 			// file path for installing the app in real device
-			//File deviceFile=new File(System.getProperty("user.dir")+"/Frankly.ipa");
+			File deviceFile=new File(System.getProperty("user.dir")+"/Frankly.ipa");
 			DesiredCapabilities capabilities= new DesiredCapabilities();
 			capabilities.setCapability("appium.version", "1.4.13");
 			capabilities.setCapability("platformName", "iOS");
@@ -37,11 +37,11 @@ public class Keywords {
 			// desire capabilities for simulator
 			capabilities.setCapability("deviceName", deviceName);
 			// desire capabilities for real device
-			//capabilities.setCapability("deviceName", "iPhone(2)(2bdd1872de84cba5440ecd96da9ca93c6f91fe5d)");
+			capabilities.setCapability("deviceName", "iPhone(2)(2bdd1872de84cba5440ecd96da9ca93c6f91fe5d)");
 			// load the file path for simulator
-			capabilities.setCapability("app", file.getAbsolutePath());
+			//capabilities.setCapability("app", file.getAbsolutePath());
 			// load the file path for real device
-			//capabilities.setCapability("app", deviceFile.getAbsolutePath());
+			capabilities.setCapability("app", deviceFile.getAbsolutePath());
 			driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		} catch (MalformedURLException e) {
@@ -133,6 +133,17 @@ public class Keywords {
 					APP_LOGS.info("Clicking on a element by its linkText");
 					try{
 						driver.findElement(By.linkText(OR.getProperty(elementlinkText))).click();
+					}catch(Exception e){
+						APP_LOGS.info(e.getMessage());
+					}
+				}
+				/**
+				 * @description- Method for clicking on link through its xpath which is dynamic generated
+				*/
+				public void clickByRandomXpath(String elementxpath){
+					APP_LOGS.info("Clicking on a element by its random generated xpath");
+					try{
+						driver.findElement(By.xpath(elementxpath)).click();
 					}catch(Exception e){
 						APP_LOGS.info(e.getMessage());
 					}
