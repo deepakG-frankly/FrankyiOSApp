@@ -13,7 +13,7 @@
 
 2. For running the test script on mobile simulator we can use ipa file or .app which comes after building the project
 	Steps for building the project to get .app file
-		a. select a same simulator in Xcode while building the app that you have 		   selected in appium
+		a. select a same simulator in Xcode while building the app that you have selected in appium
 3. For running the test script on real device you will be needing .ipa file
 	Steps for extracting the .ipa file from Xcode
 	Always do clear sing in for extracting the .ipa file form xacode
